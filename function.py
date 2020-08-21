@@ -14,11 +14,11 @@ def get_country_confirmed_infected(country, start_date, end_date):
 
 
 def send_whatsapp_message(msg):
-    account_sid = 'AC1949902ebd984bbf53296de26e50c577'
-    auth_token = '7a32957135dbdaa1bd4e79f13910de3c'
+    account_sid = ''
+    auth_token = ''
     Client(account_sid, auth_token).messages.create(
         from_='whatsapp:+14155238886',
-        to='whatsapp:+5491123926384',
+        to='whatsapp:+54911********',
         body=msg
     )
 def send_whatsapp_message2(msg):
@@ -26,7 +26,7 @@ def send_whatsapp_message2(msg):
     auth_token = '7a32957135dbdaa1bd4e79f13910de3c'
     Client(account_sid, auth_token).messages.create(
         from_='whatsapp:+14155238886',
-        to='whatsapp:+5491126305595',
+        to='whatsapp:+54911********',
         body=msg
     )
 
